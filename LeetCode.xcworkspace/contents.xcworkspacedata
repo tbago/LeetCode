@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:longest-substring/longest-substring.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:two-sum/two-sum.xcodeproj">
    </FileRef>
 </Workspace>
