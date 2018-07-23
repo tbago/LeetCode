@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		D0D65DC921057E92008343E9 /* two-sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "two-sum"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D65DCC21057E92008343E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		D0D65DD321058215008343E9 /* description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = description.md; sourceTree = "<group>"; };
+		D0D65DD4210583F0008343E9 /* description.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = description.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,7 @@
 		D0D65DC021057E90008343E9 = {
 			isa = PBXGroup;
 			children = (
+				D0D65DD4210583F0008343E9 /* description.md */,
 				D0D65DCB21057E92008343E9 /* two-sum */,
 				D0D65DCA21057E92008343E9 /* Products */,
 			);
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				D0D65DCC21057E92008343E9 /* main.cpp */,
-				D0D65DD321058215008343E9 /* description.md */,
 			);
 			path = "two-sum";
 			sourceTree = "<group>";
