@@ -15,16 +15,23 @@ public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         sortInputNumber(nums);
         vector<vector<int>> resultVector;
-        for (uint32_t i = 0; i < nums.size() - 2; i++) {
-            for (uint32_t j = i + 1; j < nums.size() - 1; j++) {
-                for (uint32_t k = j+1; k< nums.size(); k++) {
-                    if (nums[i] + nums[j] + nums[k] == 0) {
-                        vector<int> threeNum;
-                        threeNum.push_back(nums[i]);
-                        threeNum.push_back(nums[j]);
-                        threeNum.push_back(nums[k]);
-                        insertResultVector(resultVector, threeNum);
-                    }
+        for (uint32_t i = 0; i < nums.size(); i++) {
+            uint32_t left = i + 1;
+            uint32_t right = (uint32_t)nums.size() -1;
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    vector<int> threeNum;
+                    threeNum.push_back(nums[i]);
+                    threeNum.push_back(nums[left]);
+                    threeNum.push_back(nums[right]);
+                    insertResultVector(resultVector, threeNum);
+                }
+                if (sum <= 0) {
+                    left++;
+                }
+                else {
+                    right--;
                 }
             }
         }
@@ -62,7 +69,7 @@ private:
 
 int main(int argc, const char * argv[]) {
     vector<int> inputNumbers;
-    inputNumbers.push_back(-1);
+    inputNumbers.push_back(0);
     inputNumbers.push_back(0);
     inputNumbers.push_back(1);
     inputNumbers.push_back(2);
