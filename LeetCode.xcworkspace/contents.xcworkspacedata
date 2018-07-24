@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:threesum/threesum.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:palindrome-number/palindrome-number.xcodeproj">
    </FileRef>
    <FileRef
