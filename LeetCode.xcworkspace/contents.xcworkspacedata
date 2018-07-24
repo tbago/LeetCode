@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:palindrome-number/palindrome-number.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:reverse-integer/reverse-integer.xcodeproj">
    </FileRef>
    <FileRef
