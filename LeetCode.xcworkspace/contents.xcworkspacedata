@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:longest-common-prefix/longest-common-prefix.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:threesum/threesum.xcodeproj">
    </FileRef>
    <FileRef
