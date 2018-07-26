@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:remove-element/remove-element.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:longest-common-prefix/longest-common-prefix.xcodeproj">
    </FileRef>
    <FileRef
