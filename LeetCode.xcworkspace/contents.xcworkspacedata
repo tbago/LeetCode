@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:roman-to-integer/roman-to-integer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:remove-element/remove-element.xcodeproj">
    </FileRef>
    <FileRef
