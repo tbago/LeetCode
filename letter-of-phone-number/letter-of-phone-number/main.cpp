@@ -35,16 +35,17 @@ public:
     }
 private:
     void pushStringResult(int digitsIndex, string stringResult) {
-        if (stringResult.length() == m_digitsString.length()) {
-            m_resultVector.push_back(stringResult);
-            return;
-        }
         int digitInLetterIndex = m_digitsString[digitsIndex] - '0';
         string numberLetter = m_numberLetterMap[digitInLetterIndex];
         for (int i = 0; i < numberLetter.length(); i++) {
             char charLetter = *(numberLetter.c_str() + i);
             string tempString = stringResult + charLetter;
-            pushStringResult(digitsIndex + 1, tempString);
+            if (tempString.length() == m_digitsString.length()) {
+                m_resultVector.push_back(tempString);
+            }
+            else {
+                pushStringResult(digitsIndex + 1, tempString);
+            }
         }
     }
 private:
