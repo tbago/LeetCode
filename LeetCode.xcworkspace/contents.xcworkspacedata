@@ -20,6 +20,9 @@
       location = "group:threesum/threesum.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:threesum/../string-to-integer/string-to-integer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:palindrome-number/palindrome-number.xcodeproj">
    </FileRef>
    <FileRef
