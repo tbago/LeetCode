@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:valid-parentheses/valid-parentheses.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:unique-morse-code-words/unique-morse-code-words.xcodeproj">
    </FileRef>
    <FileRef
