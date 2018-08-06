@@ -2,9 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:maximum-subarray/maximum-subarray.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:climbing-stairs/climbing-stairs.xcodeproj">
    </FileRef>
-   <FileRef location = "group:search-insert-position/search-insert-position.xcodeproj">
+   <FileRef
+      location = "group:search-insert-position/search-insert-position.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:implement-strstr/implement-strstr.xcodeproj">
