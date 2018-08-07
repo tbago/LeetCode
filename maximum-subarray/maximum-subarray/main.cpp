@@ -15,6 +15,20 @@ class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
         int maxValue = nums[0];
+        for (uint32_t i = 0; i < nums.size(); i++) {
+            int sum = 0;
+            for (uint32_t j = i; j <nums.size(); j++) {
+                sum += nums[j];
+                if (sum > maxValue) {
+                    maxValue = sum;
+                }
+            }
+        }
+        return maxValue;
+    }
+    
+    int maxSubArrayV3(vector<int>& nums) {
+        int maxValue = nums[0];
         for (uint32_t i = 1; i <nums.size(); i++) {
             if (maxValue <nums[i]) {
                 maxValue = nums[i];
