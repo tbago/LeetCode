@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:plus-one/plus-one.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:length-of-last-word/length-of-last-word.xcodeproj">
    </FileRef>
    <FileRef
