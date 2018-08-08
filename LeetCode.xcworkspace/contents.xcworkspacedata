@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:sqrtx/sqrtx.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:add-binary/add-binary.xcodeproj">
    </FileRef>
    <FileRef
