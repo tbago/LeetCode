@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:same-tree/same-tree.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:merge-sorted-array/merge-sorted-array.xcodeproj">
    </FileRef>
    <FileRef
