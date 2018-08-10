@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:maximum-depth-of-binary-tree/maximum-depth-of-binary-tree.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:same-tree/same-tree.xcodeproj">
    </FileRef>
    <FileRef
