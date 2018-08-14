@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -18,50 +19,33 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-#define MAX_SUB_TREE_NODE 10000
 class Solution {
 public:
-    vector<vector<int>> levelOrderBottom(TreeNode* root) {
-        resultVector.clear();
-        innerLevelOrderBottom(root);
+    vector<vector<int>> levelOrderBottom(TreeNode *root) {
+        vector<vector<int>> resultVector;
+        if (root == NULL) {
+            return resultVector;
+        }
+        queue<TreeNode *> queue;
+        queue.push(root);
+        while(!queue.empty()) {
+            vector<int> tempVector;
+            uint32_t queueSize = (uint32_t)queue.size();
+            for (uint32_t i = 0; i < queueSize; i++) {
+                TreeNode *node = queue.front();
+                queue.pop();
+                tempVector.push_back(node->val);
+                if (node->left != NULL) {
+                    queue.push(node->left);
+                }
+                if (node->right != NULL) {
+                    queue.push(node->right);
+                }
+            }
+            resultVector.insert(resultVector.begin(), tempVector);
+        }
         return resultVector;
     }
-private:
-    void innerLevelOrderBottom(TreeNode *node) {
-        int head = 0;
-        int tail = 0;
-        TreeNode *subNode[MAX_SUB_TREE_NODE] = {NULL};
-        TreeNode *tempNode;
-        if (node != NULL) {
-            subNode[head] = node;
-            tail++;
-            vector<int> addVector;
-            addVector.push_back(node->val);
-            resultVector.insert(resultVector.begin(), addVector);
-        } else {
-            return;
-        }
-        while (head < tail) {
-            tempNode = subNode[head];
-            vector<int> addVector;
-            if (tempNode->left != NULL) {
-                addVector.push_back(tempNode->left->val);
-                subNode[tail] = tempNode->left;
-                tail++;
-            }
-            if (tempNode->right != NULL) {
-                subNode[tail] = tempNode->right;
-                addVector.push_back(tempNode->right->val);
-                tail++;
-            }
-            head++;
-            if (addVector.size() > 0) {
-                resultVector.insert(resultVector.begin(), addVector);
-            }
-        }
-    }
-private:
-    vector<vector<int>> resultVector;
 };
 
 int main(int argc, const char * argv[]) {
