@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:binary-tree-level-order-traversal/binary-tree-level-order-traversal.xcodeproj">
+      location = "group:binary-tree-level-order-traversal-2/binary-tree-level-order-traversal-2.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:maximum-depth-of-binary-tree/maximum-depth-of-binary-tree.xcodeproj">
