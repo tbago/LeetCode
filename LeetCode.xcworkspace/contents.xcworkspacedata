@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:best-time-to-buy-and-sell-stock/best-time-to-buy-and-sell-stock.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:pascals-triangle-ii/pascals-triangle-ii.xcodeproj">
    </FileRef>
    <FileRef
