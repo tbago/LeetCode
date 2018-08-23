@@ -14,6 +14,26 @@ using namespace std;
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
+        int result = 0;
+        int counter = 0;
+        for (uint32_t i = 0; i < nums.size(); i++) {
+            if (counter == 0) {
+                result = nums[i];
+                counter++;
+            }
+            else {
+                int compareValue = nums[i];
+                if (compareValue == result) {
+                    counter++;
+                }
+                else {
+                    counter--;
+                }
+            }
+        }
+        return result;
+    }
+    int majorityElementV2(vector<int>& nums) {
         if (nums.size() == 1) {
             return nums[0];
         }
