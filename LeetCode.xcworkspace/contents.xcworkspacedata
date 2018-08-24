@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:valid-sudoku/valid-sudoku.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:majority-element/majority-element.xcodeproj">
    </FileRef>
    <FileRef
