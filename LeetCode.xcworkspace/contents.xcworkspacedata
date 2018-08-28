@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:count-primes/count-primes.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:remove-linked-list-elements/remove-linked-list-elements.xcodeproj">
    </FileRef>
    <FileRef
