@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:isomorphic-strings/isomorphic-strings.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:delete-node-in-a-linked-list/delete-node-in-a-linked-list.xcodeproj">
    </FileRef>
    <FileRef
