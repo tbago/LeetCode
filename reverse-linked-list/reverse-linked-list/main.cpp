@@ -17,6 +17,18 @@ struct ListNode {
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
+        if (head == NULL || head->next == NULL) {
+            return head;
+        }
+        else {
+            ListNode *newHead = reverseList(head->next);
+            head->next->next = head;
+            head->next = NULL;
+            return newHead;
+        }
+    }
+    
+    ListNode* reverseListV2(ListNode* head) {
         if (head == NULL) {
             return head;
         }
