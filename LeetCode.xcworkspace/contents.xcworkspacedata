@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:power-of-two/power-of-two.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:contains-duplicate/contains-duplicate.xcodeproj">
    </FileRef>
    <FileRef
