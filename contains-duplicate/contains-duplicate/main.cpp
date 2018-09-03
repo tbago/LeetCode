@@ -8,20 +8,18 @@
 
 #include <iostream>
 #include <vector>
+#include <set>
 
 using namespace std;
 
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
+        set<int> numsSet;
         for (uint32_t i = 0; i < nums.size(); i++) {
-            for (uint32_t j = i+1; j < nums.size(); j++) {
-                if (nums[i] == nums[j]) {
-                    return true;
-                }
-            }
+            numsSet.insert(nums[i]);
         }
-        return false;
+        return numsSet.size() != nums.size();
     }
 };
 
