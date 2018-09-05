@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:power-of-three/power-of-three.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:palindrome-linked-list/palindrome-linked-list.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:power-of-two/power-of-two.xcodeproj">
    </FileRef>
    <FileRef
