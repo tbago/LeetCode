@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:sum-of-two-integers/sum-of-two-integers.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:reverse-string/reverse-string.xcodeproj">
    </FileRef>
    <FileRef
