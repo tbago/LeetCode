@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:guess-number-higher-or-lower/guess-number-higher-or-lower.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:sum-of-two-integers/sum-of-two-integers.xcodeproj">
    </FileRef>
    <FileRef
