@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:replace-space/replace-space.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ransom-note/ransom-note.xcodeproj">
    </FileRef>
    <FileRef
