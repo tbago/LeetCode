@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:revert_print/revert_print.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:repeat-number/repeat-number.xcodeproj">
    </FileRef>
    <FileRef
