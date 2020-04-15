@@ -54,12 +54,25 @@ public:
         if (inputQueue.size() == 1) {
             return inputQueue.front();
         }
-        return inputQueue.back();
+
+        std::queue<int> tempQueue;
+        while (inputQueue.size() > 1) {
+            tempQueue.push(inputQueue.front());
+            inputQueue.pop();
+        }
+        int value = inputQueue.front();
+        tempQueue.push(value);
+        inputQueue.pop();
+        while (tempQueue.size() > 0) {
+            inputQueue.push(tempQueue.front());
+            tempQueue.pop();
+        }
+        return value;
     }
 
     /** Returns whether the stack is empty. */
     bool empty() {
-        return inputQueue.size() == 0;
+        return inputQueue.empty();
     }
 private:
     std::queue<int> inputQueue;
