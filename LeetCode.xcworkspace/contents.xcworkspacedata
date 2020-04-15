@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:stack-to-queue/stack-to-queue.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:revert_print/revert_print.xcodeproj">
    </FileRef>
    <FileRef
