@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:quick-sort/quick-sort.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:queue-to-stack/queue-to-stack.xcodeproj">
    </FileRef>
    <FileRef
