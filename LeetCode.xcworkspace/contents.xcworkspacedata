@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:minimum-in-rotate-array/minimum-in-rotate-array.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:quick-sort/quick-sort.xcodeproj">
    </FileRef>
    <FileRef
